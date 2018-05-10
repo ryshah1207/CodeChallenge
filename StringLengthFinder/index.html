@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="StringLengthFinderApp">
+<head>
+  <meta charset="utf-8">
+  <title>String Length Finder </title>
+  <script src="lib/angular.min.js"></script>
+  <script src="http://searls.github.com/jasmine-all/jasmine-all-min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers/myStringCtrl.js"></script>
+  <script src="js/controllers/unitTest.js"></script>
+</head>
+<body ng-controller="StringLengthFinderController">
+    <div>
+      <form name="myform">
+        <input type="text" placeholder="Enter String" ng-model="inputString" required>
+        <button ng-click="myString(inputString)" class="button">Search</button>
+        <p>Length of the String is: {{stringLength}}</p>
+        <p>Longest String is: {{longestString}}</p>
+        </form>
+      </div>
+  </body>
+  </html>
